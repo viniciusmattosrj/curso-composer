@@ -1,5 +1,13 @@
 {
+    "name": "vinicius/curso-composer",
     "require": {
-        "phpmailer/phpmailer": "^5.2"
-    }
+        "phpmailer/phpmailer": "^5.2",
+        "symfony/var-dumper": "3.3.6"
+    },
+    "authors": [
+        {
+            "name": "Vinicius Mattos",
+            "email": "vinimattos.rj@gmail.com"
+        }
+    ]
 }

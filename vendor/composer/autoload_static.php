@@ -4,8 +4,32 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit2c4849002af1ca22d80ceb983f7e0c25
+class ComposerStaticInitfde5afcf0af8daa223e60466c05524d8
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+    );
+
     public static $classMap = array (
         'EasyPeasyICS' => __DIR__ . '/..' . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
         'PHPMailer' => __DIR__ . '/..' . '/phpmailer/phpmailer/class.phpmailer.php',
@@ -20,7 +44,9 @@ class ComposerStaticInit2c4849002af1ca22d80ceb983f7e0c25
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit2c4849002af1ca22d80ceb983f7e0c25::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitfde5afcf0af8daa223e60466c05524d8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitfde5afcf0af8daa223e60466c05524d8::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitfde5afcf0af8daa223e60466c05524d8::$classMap;
 
         }, null, ClassLoader::class);
     }

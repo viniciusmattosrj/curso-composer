@@ -1,8 +1,12 @@
 {
     "name": "vinicius/curso-composer",
+    "minimum-stability": "dev",
     "require": {
         "phpmailer/phpmailer": "^5.2",
-        "symfony/var-dumper": "3.3.6"
+        "symfony/var-dumper": "3.3.6",
+        "php-activerecord/php-activerecord": "^1.2",
+        "cboden/ratchet": "^0.4.1",
+        "swiftmailer/swiftmailer": "^6.0@dev"
     },
     "authors": [
         {

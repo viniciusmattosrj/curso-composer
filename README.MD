@@ -11,7 +11,7 @@ Install <a href="https://docs.docker.com/compose/install/">docker-compose</a>
 
 
 ## Instalação
-Realizar o git clone do projetoz
+Realizar o git clone do projeto
 ```bash
 git clone git@github.com:viniciusmattosrj/curso-composer.git
 ```

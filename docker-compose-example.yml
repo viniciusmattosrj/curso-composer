@@ -1,5 +1,6 @@
 version: "2"
 services:
+
   php:
     image: viniciusmattosrj/php:7.1
     container_name: php
@@ -23,7 +24,7 @@ services:
      - PHP_IDE_CONFIG=serverName=Local
     networks:
       servicos:
-        ipv4_address: 10.11.0.2
+        ipv4_address: 10.11.0.11
 
 networks:
   servicos:

@@ -1,5 +1,6 @@
-# Composer para iniciantes
+# Sobre o Projeto
 
+Composer para iniciantes.
  - <a href="https://www.asolucoesweb.com.br/curso/composer-para-iniciantes">Gerenciador de dependencias para PHP Composer</a> - Alexandre Cardoso
 
 

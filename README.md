@@ -1,49 +1,29 @@
-# Sobre o Projeto
-
-Composer para iniciantes.
- - <a href="https://www.asolucoesweb.com.br/curso/composer-para-iniciantes">Gerenciador de dependencias para PHP Composer</a> - Alexandre Cardoso
-
+[![pipeline status](https://github.com/viniciusmattosrj/curso-composer/badges/releaseCandidate/pipeline.svg)](https://github.com/viniciusmattosrj/curso-composer/commits/releaseCandidate)
 
 ## Requerimentos
 
-Install <a href="https://docs.docker.com/install/">Docker</a>
+- Install <a href="https://docs.docker.com/install/">Docker</a>
+- Install <a href="https://docs.docker.com/compose/install/">docker-compose</a>
+- Mysql >= 5.7 ou Postgres >= 11
+- Composer
+- PHP &ge; 7.3.22
 
-Install <a href="https://docs.docker.com/compose/install/">docker-compose</a>
+### Sobre
 
+- <a href="https://www.asolucoesweb.com.br/curso/composer-para-iniciantes">Gerenciador de dependencias para PHP Composer</a> - Alexandre Cardoso
 
-## Tecnologias utilizadas:
+### Requisitos de cloud(nuvem)
 
- - PHP >= 7.1
- - Docker
+- _PHP-FPM_: external Nginx access will point towards this daemon
 
+Veja `.env.example` as [instruções](docs/installation.md) sobre as variáveis de ambiente.
 
-## Instalação
-Realizar o git clone do projeto
-```bash
-git clone git@github.com:viniciusmattosrj/curso-composer.git
-```
-Entre pelo terminal na pasta do projeto e rode:
-```
-cp ./docker-compose-example.php  ./docker-compose.php
-```
-Agora suba o servidor:
-```
-docker-compose up -d
-```
+Para instalação verifique **[installation documentation](docs/installation.md)**.
 
-Em outra aba do terminal se conecte no container do php e inicie um servidor built in do PHP
-```
-docker exec -it php bash
-php -S 10.11.0.2:8008 -t .
-```
+### Contribuições
 
-No browser digite http://10.11.0.2:8008
+Caso identifique pontos que possam ser aprimorados, será um prazer analisar o seu PR. ;-)
 
+### License
 
-## Contribuições
-Caso identifique pontos
-que possam ser aprimorados envie o seu PR. ;-)
-
-
-## License
 [MIT](https://choosealicense.com/licenses/mit/)
